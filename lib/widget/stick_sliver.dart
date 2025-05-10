@@ -2,7 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:whatif/widget/custom_tween.dart';
+import 'package:marvel_what_if/widget/custom_tween.dart';
 
 class StickySliverAppBar extends StatefulWidget {
   const StickySliverAppBar({

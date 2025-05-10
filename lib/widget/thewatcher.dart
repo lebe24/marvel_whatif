@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/core/config/constant/constant.dart';
+import 'package:marvel_what_if/core/config/constant/constant.dart';
 
 class TheWatcher extends StatelessWidget {
   const TheWatcher({super.key});

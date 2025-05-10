@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/widget/background_cover.dart';
+import 'package:marvel_what_if/widget/background_cover.dart';
 
 class MovieDetails extends StatefulWidget {
   const MovieDetails({super.key,required this.moviedata});

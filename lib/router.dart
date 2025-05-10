@@ -1,4 +1,9 @@
 
+import 'package:marvel_what_if/Screens/Home.dart';
+import 'package:marvel_what_if/Screens/details_screen.dart';
+import 'package:marvel_what_if/Screens/movie_details.dart';
+import 'package:marvel_what_if/model/magazine.dart';
+import 'package:marvel_what_if/widget/background_cover.dart';
 
 import 'export.dart';
 

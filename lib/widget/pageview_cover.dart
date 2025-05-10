@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/model/magazine.dart';
 import 'dart:ui' as ui;
 
-import 'package:whatif/widget/cover_image.dart';
-import 'package:whatif/widget/draggable_slider.dart';
+import 'package:marvel_what_if/model/magazine.dart';
+import 'package:marvel_what_if/widget/cover_image.dart';
+import 'package:marvel_what_if/widget/draggable_slider.dart';
+
+
 
 
 class PageViewCover extends StatefulWidget {

@@ -1,8 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:whatif/Screens/movie_details.dart';
+import 'package:marvel_what_if/Screens/movie_details.dart';
 
 class MovieCardDetails extends StatelessWidget {
   const MovieCardDetails({super.key, required this.imagePath, required this.movieTitle, this.movieData});

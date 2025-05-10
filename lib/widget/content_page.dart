@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/model/magazine.dart';
-import 'package:whatif/services/services.dart';
-import 'package:whatif/widget/custom_tween.dart';
-import 'package:whatif/widget/movie_details_card.dart';
+import 'package:marvel_what_if/model/magazine.dart';
+import 'package:marvel_what_if/services/services.dart';
+import 'package:marvel_what_if/widget/custom_tween.dart';
+import 'package:marvel_what_if/widget/movie_details_card.dart';
+
 
 class ContentMagazinesPageView extends StatefulWidget {
   const ContentMagazinesPageView({

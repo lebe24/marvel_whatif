@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/model/magazine.dart';
+import 'package:marvel_what_if/model/magazine.dart';
 
 class MagazineCoverImage extends StatelessWidget {
   const MagazineCoverImage({

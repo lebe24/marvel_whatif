@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/core/config/constant/constant.dart';
+import 'package:marvel_what_if/core/config/constant/constant.dart';
 
 class BackgroundCover extends StatelessWidget {
   const BackgroundCover({super.key,required this.child});
