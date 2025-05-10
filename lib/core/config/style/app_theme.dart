@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatif/core/config/style/app_color.dart';
+import 'package:marvel_what_if/core/config/style/app_color.dart';
 import 'app_text.dart';
 
 class AppTheme {

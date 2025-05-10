@@ -16,8 +16,8 @@ class WhatIf{
   static const AssetImage appLogo = AssetImage('assets/what-if-logo.png');
   static const AssetImage theWatcher = AssetImage('assets/characters/thewatcher.png');
 
-  static const AssetImage season1 = AssetImage('assets/poster/season_1.jpg');
+  static const AssetImage season1 = AssetImage('assets/poster/season_1.webp');
   static const AssetImage season2 = AssetImage('assets/poster/season_2.webp');
-  static const AssetImage season3 = AssetImage('assets/poster/season3.webp');
+  static const AssetImage season3 = AssetImage('assets/poster/season_3.webp');
 
 }
