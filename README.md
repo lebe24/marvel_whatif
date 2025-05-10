@@ -1,8 +1,13 @@
-# marvel_whatif
 
-A new Flutter project.
+  <img src="/assets/readme/what-if-poster.jpeg" alt="ui" width="700" height="400">
 
-## Getting Started
+<h2 align="center">A Marvel what-if Fan Project </h2>
+
+[Showcase](#showcase) | [Docs](https://docs.rowboatlabs.com/) | [Discord](https://discord.gg/gtbGcqF4) | [Website](https://www.rowboatlabs.com/) | [Youtube](https://www.youtube.com/@RowBoatLabs) 
+
+## Showcase
+
+- <img src="/assets/showcase/Screenshot%202.png" alt="ui" width="300" height="600"> <img src="/assets/showcase/Screenshot%20.png" alt="ui" width="300" height="600">
 
 This project is a starting point for a Flutter application.
 
