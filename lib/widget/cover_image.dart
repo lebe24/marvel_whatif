@@ -10,6 +10,7 @@ class MagazineCoverImage extends StatelessWidget {
 
   final Magazine magazine;
   final double? height;
+  
 
   @override
   Widget build(BuildContext context) {

@@ -11,9 +11,10 @@ class WhatIf{
 
   // Api Api
   static const String api = '2b22ab5e2d69c8926e451e306dcf9225';
+  static const String cloudfronturl = "https://d3eppa16o5gzed.cloudfront.net";
 
   static const AssetImage appBackground =  AssetImage('assets/cover-background.png');
-  static const AssetImage appLogo = AssetImage('assets/what-if-logo.png');
+  static const AssetImage appLogo = AssetImage('assets/splash/what-if-logo.png');
   static const AssetImage theWatcher = AssetImage('assets/characters/thewatcher.png');
 
   static const AssetImage season1 = AssetImage('assets/poster/season_1.webp');

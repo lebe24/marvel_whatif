@@ -5,6 +5,7 @@ import 'package:marvel_what_if/widget/background_cover.dart';
 import 'package:marvel_what_if/widget/content_page.dart';
 import 'package:marvel_what_if/widget/pageview_cover.dart';
 import 'package:marvel_what_if/widget/stick_sliver.dart';
+import 'package:ui_common/ui_common.dart';
 
 
 class DetailScreen extends StatefulWidget {

@@ -19,7 +19,9 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: ScreenPath.home,
       builder: (context, state) {
-        return const BackgroundCover(child: Home());
+        return const BackgroundCover(
+          child: Home()
+        );
       },
       routes: <RouteBase>[
         GoRoute(
@@ -33,7 +35,6 @@ final GoRouter router = GoRouter(
               magazines: magazines,
             );
           },
-        
         ),
         GoRoute(
               path: ScreenPath.movieDetail, 

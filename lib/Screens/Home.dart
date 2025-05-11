@@ -74,7 +74,9 @@ class _HomeState extends State<Home> with TickerProviderStateMixin{
                     onTapItem: (index) => openMagazineDetail(context, index),
                     shrinkAnimation: outAnimationController,
                     itemBuilder: (_, int index) =>
-                         MagazineCoverImage(magazine:magazines[index],height: 250),
+                         MagazineCoverImage(
+                          magazine: magazines[index],
+                          height: 250),
                   ),
                 ),
               ),
