@@ -9,11 +9,12 @@ class ContentMagazinesPageView extends StatefulWidget {
   const ContentMagazinesPageView({
     required this.indexNotifier,
     required this.magazines,
-    super.key, 
+    super.key, required this.tag, 
   });
 
   final ValueNotifier<int> indexNotifier;
   final List<Magazine> magazines;
+  final String tag;
 
   @override
   State<ContentMagazinesPageView> createState() =>
@@ -55,7 +56,7 @@ class _ContentMagazinesPageViewState extends State<ContentMagazinesPageView> {
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('ContentMagazinesPageView: ${widget.indexNotifier.value}');
+    debugPrint('ContentMagazinesPageView: ${widget.tag}');
 
     return FutureBuilder<dynamic>(
       future: contentFuture,
@@ -94,30 +95,11 @@ class _ContentMagazinesPageViewState extends State<ContentMagazinesPageView> {
                             movieData: data["episodes"][x],
                             imagePath: "https://media.themoviedb.org/t/p/w454_and_h254_bestv2/${data["episodes"][x]["still_path"]}",
                             movieTitle: data["episodes"][x]["name"],
+                            tag: "${widget.tag}E0${x+1}",
                           ),
                           const SizedBox(height: 18),
-                          // Text(
-                          //   data["episodes"][x]["name"],
-                          //   style: Theme.of(context).textTheme.titleLarge?.copyWith(letterSpacing: 2),
-                          // ),
-                          // const SizedBox(height: 12),
-                          // Image.network(
-                          //   "https://media.themoviedb.org/t/p/w454_and_h254_bestv2/${data["episodes"][x]["still_path"]}",   
-                          //   height: 220,
-                          //   fit: BoxFit.cover,
-                          // ),
-                          // Padding(
-                          //   padding: const EdgeInsets.only(right: 20),
-                          //   child: Text(
-                          //     data["episodes"][x]["overview"],
-                          //     style: Theme.of(context).textTheme.bodyMedium?.copyWith(letterSpacing: 1),
-                          //   ),
-                          //                           ),
-                          // const SizedBox(height: 28),
                     
-                          
-                          
-                          // const SizedBox(height: 28),
+                        
                         ]
                       ],
                     ),

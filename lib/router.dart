@@ -11,6 +11,7 @@ class ScreenPath{
   static const String home = '/';
   static const String episodeList = '/episodeList';
   static const String movieDetail = '/movieDetails';
+  static const String player = '/player';
 }
 
 
@@ -30,9 +31,11 @@ final GoRouter router = GoRouter(
             final extra = state.extra as Map<String, Object>;
             final index = extra['index'] as int;
             final magazines = extra['magazines'] as List<Magazine>;
+            final tag = extra['tag'] as String;
             return DetailScreen(
               index: index,
               magazines: magazines,
+              tag:tag
             );
           },
         ),
@@ -42,7 +45,7 @@ final GoRouter router = GoRouter(
                 final extra = state.extra as Map<String, dynamic>;
                 final data = extra['data'] as dynamic;
                 return MovieDetails(
-                  moviedata: data,
+                  moviedata: data, tag: '',
                 );
               }
             )

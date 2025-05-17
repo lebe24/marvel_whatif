@@ -53,6 +53,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin{
       extra: {
          "magazines": magazines,
          "index": currentIndex,
+         "tag": magazines[currentIndex].tags,
       },
     );
     outAnimationController.forward();

@@ -3,64 +3,13 @@ import 'package:marvel_what_if/widget/background_cover.dart';
 import 'package:marvel_what_if/widget/cast.dart';
 import 'package:marvel_what_if/widget/player.dart';
 
-// class MovieDetails extends StatefulWidget {
-//   const MovieDetails({super.key,required this.moviedata});
 
-//   final dynamic moviedata;
-
-//   @override
-//   State<MovieDetails> createState() => _MovieDetailsState();
-// }
-
-// class _MovieDetailsState extends State<MovieDetails> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return  BackgroundCover(
-//       child:CustomScrollView(
-//         slivers: [
-//           SliverAppBar(
-//             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-//             expandedHeight: MediaQuery.of(context).size.height / 2.1,
-//             flexibleSpace: FlexibleSpaceBar(
-//               background: Image.network(
-//                 "https://media.themoviedb.org/t/p/w454_and_h254_bestv2/${widget.moviedata["still_path"]}",
-//                 fit: BoxFit.cover,
-//               ),
-//             ),
-//           ),
-//           SliverList(
-//             delegate: SliverChildBuilderDelegate((ctx, _) {
-//               return Padding(
-//                 padding: const EdgeInsets.all(8.0),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.start,
-//                   children: [
-//                     Text(
-//                       widget.moviedata["name"],
-//                       style: const TextStyle(
-//                         fontSize: 20,
-//                         fontWeight: FontWeight.bold,
-//                       ),
-//                     ),
-//                     const SizedBox(height: 10),
-//                     Text(
-//                       widget.moviedata["overview"],
-//                       style: const TextStyle(fontSize: 16),
-//                     ),
-//                   ],
-//                 ),
-//               );
-//             }
-//           ))
-//         ],
-//       )
-//     );
-//   }
-// }
 
 class MovieDetails extends StatefulWidget {
-  const MovieDetails({super.key,required this.moviedata});
-final dynamic moviedata;
+  const MovieDetails({super.key,required this.moviedata, required this.tag});
+  
+  final dynamic moviedata;
+  final String tag;
 
   @override
   State<MovieDetails> createState() => _MovieDetailsState();
@@ -70,7 +19,7 @@ class _MovieDetailsState extends State<MovieDetails> {
   
   @override
   Widget build(BuildContext context) {
-    
+    debugPrint("MovieDetails: ${widget.tag}");
     return Scaffold(
       body: BackgroundCover(
           child: CustomScrollView(
@@ -120,9 +69,21 @@ class _MovieDetailsState extends State<MovieDetails> {
                         ),
                         const Icon(Icons.star),
                         Text(widget.moviedata['vote_average'].toString()),
-      
                         const SizedBox(
                           width: 10,
+                        ),
+                        IconButton(
+                            icon: const Icon(Icons.play_circle),
+                            onPressed: () { 
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Player(
+                                    videoUrl:widget.tag
+                                  ),
+                                ),
+                              );
+                             },
                         ),
                         // const Icon(Icons.play_circle),
                       ],

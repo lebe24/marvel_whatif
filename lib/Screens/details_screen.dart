@@ -9,15 +9,17 @@ import 'package:ui_common/ui_common.dart';
 
 
 class DetailScreen extends StatefulWidget {
-  const DetailScreen({super.key, required this.index, required this.magazines});
+  const DetailScreen({super.key, required this.index, required this.magazines, required this.tag});
 
   final int index;
   final List<Magazine> magazines;
+  final String tag ;
 
   static void push(
     BuildContext context, {
     required int index,
     required List<Magazine> magazines,
+    required String tag,
   }) =>
       Navigator.push<int>(
         context,
@@ -26,7 +28,8 @@ class DetailScreen extends StatefulWidget {
             opacity: animation,
             child: DetailScreen(
               index: index,
-              magazines: magazines,
+              magazines: magazines, 
+              tag: tag,
             ),
           ),
         ),
@@ -106,6 +109,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     child: ContentMagazinesPageView(
                       indexNotifier: indexNotifier,
                       magazines: widget.magazines,
+                      tag: widget.tag,
                     ),
                   ),
                 ],

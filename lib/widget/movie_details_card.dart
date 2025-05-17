@@ -4,10 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:marvel_what_if/Screens/movie_details.dart';
 
 class MovieCardDetails extends StatelessWidget {
-  const MovieCardDetails({super.key, required this.imagePath, required this.movieTitle, this.movieData});
+  const MovieCardDetails({super.key, required this.imagePath, required this.movieTitle, this.movieData, required this.tag});
 
   final String imagePath, movieTitle;
   final dynamic movieData;
+  final String tag;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,7 @@ class MovieCardDetails extends StatelessWidget {
               pageBuilder: (context, animation, secondaryAnimation) {
                 return MovieDetails(
                    moviedata: movieData,
+                   tag:tag,
                 );
               },
             ),
