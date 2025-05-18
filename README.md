@@ -3,7 +3,7 @@
 
 <h2 align="center">A Marvel what-if Fan Project </h2>
 
-[Showcase](#showcase) | [Docs](https://docs.rowboatlabs.com/) | [Discord](https://discord.gg/gtbGcqF4) | [Website](https://www.rowboatlabs.com/) | [Youtube](https://www.youtube.com/@RowBoatLabs) 
+[Showcase](#showcase) | [Docs]() | [Discord]() | [Website]() | [Youtube]() 
 
 ## Showcase
 
