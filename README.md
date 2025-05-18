@@ -9,11 +9,11 @@
 
 - <img src="/assets/showcase/Screenshot%202.png" alt="ui" width="300" height="600"> <img src="/assets/showcase/Screenshot%20.png" alt="ui" width="300" height="600">
 
-## Run of firebase studio
+## Run of firebase studio
 
 link : https://idx.google.com/marvelwhatif-40705775
 
-link 
+## Project
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
